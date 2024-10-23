@@ -1,0 +1,63 @@
+[versions]
+agp = "8.7.1"
+appcompat = "1.7.0"
+firebaseCrashlyticsGradle = "3.0.2"
+googleServices = "4.4.2"
+material = "1.12.0"
+constraintlayout = "2.1.4"
+firebaseFirestoreKtx = "25.1.1"
+firebaseStorageKtx = "21.0.1"
+firebaseMessagingKtx = "24.0.3"
+firebaseBom = "33.5.0"
+firebaseUiFirestore = "8.0.2"
+firebaseAppCheck = "18.0.0"
+firebaseAppCheckDebug = "18.0.0"
+junit = "4.13.2"
+extJunit = "1.2.1"
+espressoCore = "3.6.1"
+countryCodePicker = "2.5.0"
+imagepicker = "2.1"
+glide = "4.16.0"
+okhttp = "4.12.0"
+firebaseFirestore = "25.1.1"
+firebaseMessaging = "24.0.3"
+
+[libraries]
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+google-firebase-appcheck = { module = "com.google.firebase:firebase-appcheck" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
+google-firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
+google-firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx" }
+google-firebase-storage-ktx = { module = "com.google.firebase:firebase-storage-ktx" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# Firebase dependencies
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+firebase-storage-ktx = { group = "com.google.firebase", name = "firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
+firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseBom" }  # Using BOM for consistency
+firebase-appcheck = { group = "com.google.firebase", name = "firebase-appcheck", version.ref = "firebaseAppCheck" }
+firebase-appcheck-debug = { group = "com.google.firebase", name = "firebase-appcheck-debug", version.ref = "firebaseAppCheckDebug" }
+
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-ui-firestore = { group = "com.firebaseui", name = "firebase-ui-firestore", version.ref = "firebaseUiFirestore" }
+
+# Testing libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "extJunit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Other libraries
+countryCodePicker = { group = "com.hbb20", name = "ccp", version.ref = "countryCodePicker" }
+imagepicker = { group = "com.github.dhaval2404", name = "imagepicker", version.ref = "imagepicker" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version = "4.4.2" }
